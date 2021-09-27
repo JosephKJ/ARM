@@ -32,8 +32,8 @@ class mnist5k(VisionDataset):
 
     # follows https://github.com/optimass/Maximally_Interfered_Retrieval/
 
-    train = datasets.MNIST(root, train=True, download=False)
-    test = datasets.MNIST(root, train=False, download=False)
+    train = datasets.MNIST(root, train=True, download=True)
+    test = datasets.MNIST(root, train=False, download=True)
 
     train_x, train_y = train.data, train.targets  # 60000, 28, 28; 60000
     test_x, test_y = test.data, test.targets
